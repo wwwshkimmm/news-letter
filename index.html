@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI 보안 칼럼 · News Letter</title>
+  <style>
+    :root {
+      --bg: #fafafa;
+      --surface: #ffffff;
+      --text: #1a1a1a;
+      --text-muted: #666;
+      --accent: #2563eb;
+      --border: #e5e7eb;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      font-size: 16px;
+    }
+    .wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+    .brand {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 800;
+      line-height: 1.3;
+      margin-bottom: 12px;
+    }
+    .intro {
+      color: var(--text-muted);
+      font-size: 15px;
+      margin-bottom: 40px;
+    }
+    .list { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+    .card {
+      display: block;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 22px;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    .card:hover {
+      border-color: #bfdbfe;
+      box-shadow: 0 4px 14px rgba(37, 99, 235, 0.08);
+    }
+    .card-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+    .badge {
+      background: #eff6ff;
+      color: #1d4ed8;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 999px;
+    }
+    .card-title {
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 1.4;
+      margin-bottom: 8px;
+    }
+    .card-summary {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.55;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <p class="brand">News Letter</p>
+    <h1>AI × 보안 칼럼</h1>
+    <p class="intro">망분리·엔터프라이즈 환경에서 Cursor로 AI 생산성을 지키는 3부작 시리즈입니다.</p>
+
+    <ul class="list">
+      <li>
+        <a class="card" href="posts/20260704001/">
+          <div class="card-meta">
+            <span class="badge">Prologue</span>
+            <span>2026-07-04</span>
+            <span>20260704001</span>
+          </div>
+          <div class="card-title">남들은 다 쓰는 AI, 철통 보안 속에서 우리는 어떻게 지배할 것인가</div>
+          <p class="card-summary">망분리·소스코드 보안 규정으로 AI 활용이 제한된 현업 개발자를 위한 3부작 칼럼의 프롤로그입니다.</p>
+        </a>
+      </li>
+      <li>
+        <a class="card" href="posts/20260704002/">
+          <div class="card-meta">
+            <span class="badge">1회차</span>
+            <span>2026-07-04</span>
+            <span>20260704002</span>
+          </div>
+          <div class="card-title">프런트엔드 대전환기, 보안 속에서 AI와 안전하게 공존하는 법</div>
+          <p class="card-summary">소스코드 노출 없이 AI 추론만 활용하는 ‘비즈니스 도메인 소거법’과 외부 오픈소스 명세 주입 전략을 제안합니다.</p>
+        </a>
+      </li>
+      <li>
+        <a class="card" href="posts/20260704003/">
+          <div class="card-meta">
+            <span class="badge">2회차</span>
+            <span>2026-07-04</span>
+            <span>20260704003</span>
+          </div>
+          <div class="card-title">Cursor 실전 마스터, 보안망을 넘어선 프런트엔드 최적화와 코드 검증</div>
+          <p class="card-summary">격리 창 실전으로 가상 구조 질의·WAI-ARIA 검증까지, 보안망 안 문맥 제어 방법을 다룹니다.</p>
+        </a>
+      </li>
+      <li>
+        <a class="card" href="posts/20260704004/">
+          <div class="card-meta">
+            <span class="badge">3회차</span>
+            <span>2026-07-04</span>
+            <span>20260704004</span>
+          </div>
+          <div class="card-title">Cursor 실전 마스터, 사내 보안을 지키며 대규모 레거시 코드 안전하게 리팩토링하기</div>
+          <p class="card-summary">@file·@web 복합 참조로 레거시 리팩토링과 Side Effect 선제 감사까지 정리한 시리즈 마무리입니다.</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
